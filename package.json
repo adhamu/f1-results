@@ -1,0 +1,21 @@
+{
+  "name": "kill-gulp",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Amit Dhamu <dev@amitd.co>",
+  "license": "MIT",
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "devDependencies": {
+
+  },
+  "scripts": {
+
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
