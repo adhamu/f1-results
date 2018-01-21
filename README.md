@@ -8,3 +8,4 @@ The purpose of this proof-of-concept project is to remove reliance on Gulp as a 
 - Autoprefixer
 - Concat JS/CSS
 - Uglify JS/CSS
+- Optimise Images
