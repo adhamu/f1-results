@@ -1,18 +1,6 @@
 @charset 'UTF-8';
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-$grey: #333;
-$color-orange: #f98a09;
-
 body {
-    background: $color-orange;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 
-h1 {
-    font-size: 5em;
 }

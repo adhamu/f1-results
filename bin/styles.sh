@@ -7,7 +7,7 @@ FILE="styles"
 IN_EXT="scss"
 OUT_EXT="css"
 SRC_DIRECTORY="src/scss"
-OUTPUT_DIRECTORY="dist/css"
+OUTPUT_DIRECTORY="public/css"
 
 rm -f "${OUTPUT_DIRECTORY}/${FILE}.${OUT_EXT}"
 
