@@ -8,11 +8,10 @@
     "last 2 versions"
   ],
   "devDependencies": {
-
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.11"
   },
-  "scripts": {
-
-  },
+  "scripts": {},
   "dependencies": {
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
