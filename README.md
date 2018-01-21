@@ -4,8 +4,10 @@ The purpose of this proof-of-concept project is to remove reliance on Gulp as a 
 # Targets
 - [x] Compile SASS
 - [ ] Transpile ES6
-- [ ] Use Boostrap 4
-- [ ] Autoprefixer
-- [ ] Concat JS/CSS
-- [ ] Uglify JS/CSS
+- [x] Use Boostrap 4
+- [x] Autoprefixer
+- [ ] Concat JS
+- [ ] Concat CSS
+- [x] Uglify CSS
+- [ ] Uglify JS
 - [ ] Optimise Images
