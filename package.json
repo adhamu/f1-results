@@ -8,12 +8,14 @@
     "last 2 versions"
   ],
   "devDependencies": {
+    "autoprefixer": "^7.2.5",
     "node-sass": "^4.7.2",
-    "nodemon": "^1.14.11"
+    "nodemon": "^1.14.11",
+    "postcss-cli": "^4.1.1"
   },
   "scripts": {
-     "build-styles": "bin/styles.sh",
-     "watch": "bin/watch.sh"
+    "styles": "bin/styles.sh",
+    "watch": "bin/watch.sh"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
