@@ -11,7 +11,10 @@
     "node-sass": "^4.7.2",
     "nodemon": "^1.14.11"
   },
-  "scripts": {},
+  "scripts": {
+     "build-styles": "bin/styles.sh",
+     "watch": "bin/watch.sh"
+  },
   "dependencies": {
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
