@@ -15,3 +15,4 @@ The purpose of this proof-of-concept project is to remove reliance on Gulp as a 
 - [ ] Implement CSS/SCSS Watch
 - [ ] ESLint
 - [ ] Stylelint
+- [ ] Hashed filenames
