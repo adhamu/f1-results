@@ -17,3 +17,4 @@ The purpose of this proof-of-concept project is to remove reliance on Gulp as a 
 - [ ] Stylelint
 - [x] Hashed filenames
 - [x] Minify HTML
+- [x] LiveReload/BrowserSync/Dev Server
