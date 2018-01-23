@@ -13,6 +13,7 @@
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
     "browserify": "^15.2.0",
+    "hashmark": "^5.0.0",
     "html-minifier-cli": "^0.1.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.7.2",
@@ -21,10 +22,11 @@
     "uglify-js": "^3.3.8"
   },
   "scripts": {
-    "build": "bin/html.sh && bin/styles.sh && bin/scripts.sh",
+    "build": "bin/html.sh && bin/styles.sh && bin/scripts.sh && bin/revision.sh",
     "html": "bin/html.sh",
     "styles": "bin/styles.sh",
     "scripts": "bin/scripts.sh",
+    "revision": "bin/revision.sh",
     "watch": "bin/watch.sh"
   },
   "dependencies": {
