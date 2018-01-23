@@ -21,6 +21,7 @@
     "uglify-js": "^3.3.8"
   },
   "scripts": {
+    "build": "bin/html.sh && bin/styles.sh && bin/scripts.sh",
     "html": "bin/html.sh",
     "styles": "bin/styles.sh",
     "scripts": "bin/scripts.sh",
