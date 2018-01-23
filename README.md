@@ -9,5 +9,5 @@ The purpose of this proof-of-concept project is to remove reliance on Gulp as a 
 - [ ] Concat JS
 - [ ] Concat CSS
 - [x] Uglify CSS
-- [ ] Uglify JS
+- [x] Uglify JS
 - [ ] Optimise Images

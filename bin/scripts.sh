@@ -3,5 +3,10 @@
 set -x
 set -e
 
-rm -f public/js/app.js
-babel ./src/js/app.js --out-file ./public/js/app.js
+FILE="app.js"
+SRC_DIRECTORY="src/js"
+OUTPUT_DIRECTORY="public/js"
+
+mkdirp ${OUTPUT_DIRECTORY}
+rimraf "${OUTPUT_DIRECTORY}/${FILE}"
+babel "${SRC_DIRECTORY}/${FILE}" | uglifyjs --compress --mangle -o "${OUTPUT_DIRECTORY}/${FILE}"

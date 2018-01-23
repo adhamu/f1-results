@@ -11,8 +11,11 @@
     "autoprefixer": "^7.2.5",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
+    "mkdirp": "^0.5.1",
     "node-sass": "^4.7.2",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^4.1.1",
+    "rimraf": "^2.6.2",
+    "uglify-js": "^3.3.8"
   },
   "scripts": {
     "styles": "bin/styles.sh",
