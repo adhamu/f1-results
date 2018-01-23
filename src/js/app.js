@@ -1,3 +1,7 @@
+import 'jquery';
+import 'popper.js';
+import 'bootstrap';
+
 const person = {
   name: 'Amit Dhamu'
 };

@@ -9,4 +9,4 @@ OUTPUT_DIRECTORY="public/js"
 
 mkdirp ${OUTPUT_DIRECTORY}
 rimraf "${OUTPUT_DIRECTORY}/${FILE}"
-babel "${SRC_DIRECTORY}/${FILE}" | uglifyjs --compress --mangle -o "${OUTPUT_DIRECTORY}/${FILE}"
+browserify "${SRC_DIRECTORY}/${FILE}" -t [ babelify --presets [ env ] ] | uglifyjs --compress --mangle -o "${OUTPUT_DIRECTORY}/${FILE}"
