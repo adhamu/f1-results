@@ -13,6 +13,8 @@
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
     "browserify": "^15.2.0",
+    "chokidar-cli": "^1.2.0",
+    "concurrently": "^3.5.1",
     "hashmark": "^5.0.0",
     "html-minifier-cli": "^0.1.0",
     "imagemin-cli": "^3.0.0",
@@ -24,6 +26,7 @@
     "uglify-js": "^3.3.8"
   },
   "scripts": {
+    "start": "yarn build && yarn watch",
     "build": "yarn styles && yarn scripts && yarn html && yarn images",
     "html": "bin/html.sh",
     "styles": "bin/styles.sh",
