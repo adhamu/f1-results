@@ -3,6 +3,8 @@
 set -x
 set -e
 
+mkdirp public/img
+
 for i in src/img/*; do
     FILE=$(basename $i)
     EXTENSION="${FILE##*.}"
