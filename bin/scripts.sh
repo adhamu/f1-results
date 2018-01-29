@@ -10,7 +10,7 @@ OUTPUT_DIRECTORY="public/js"
 mkdirp ${OUTPUT_DIRECTORY}
 rimraf "${OUTPUT_DIRECTORY}/**/*.js"
 
-browserify "${SRC_DIRECTORY}/${FILE}" -t [ babelify --presets [ env ] ] | uglifyjs --compress --mangle -o "${OUTPUT_DIRECTORY}/${FILE}"
+browserify "${SRC_DIRECTORY}/${FILE}" -t [ babelify --presets [ env react ] ] | uglifyjs --compress --mangle -o "${OUTPUT_DIRECTORY}/${FILE}"
 
 sed -i '' "/^  \"\/js\/app\.js/d" public/manifest.json
 

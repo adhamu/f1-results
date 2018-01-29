@@ -6,6 +6,6 @@ set -e
 concurrently \
     "chokidar 'src/**/*.html' -c 'yarn html'" \
     "chokidar 'src/**/*.{css,scss}' -c 'yarn styles && yarn html'" \
-    "chokidar 'src/**/*.js' -c 'yarn scripts && yarn html'" \
+    "chokidar 'src/**/*.{js,jsx}' -c 'yarn scripts && yarn html'" \
     "chokidar 'src/**/*.{jpg,jpeg,gif,png,svg,JPG,JPEG,GIF,PNG,SVG}' -c 'yarn images && yarn html'" \
     "http-server"

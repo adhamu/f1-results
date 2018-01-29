@@ -19,3 +19,4 @@ The purpose of this proof-of-concept project is to remove reliance on Gulp as a 
 - [x] Minify HTML
 - [x] LiveReload/BrowserSync/Dev Server (Added `http-server` instead)
 - [x] FontAwesome 5
+- [x] React

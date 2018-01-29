@@ -11,11 +11,13 @@
     "autoprefixer": "^7.2.5",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "babelify": "^8.0.0",
     "browserify": "^15.2.0",
     "chokidar-cli": "^1.2.0",
     "concurrently": "^3.5.1",
     "eslint": "^4.16.0",
+    "eslint-plugin-react": "^7.6.1",
     "hashmark": "^5.0.0",
     "html-minifier-cli": "^0.1.0",
     "http-server": "^0.11.1",
@@ -43,6 +45,8 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.12.9",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }
