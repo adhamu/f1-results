@@ -13,8 +13,8 @@ The purpose of this proof-of-concept project is to remove reliance on Gulp as a 
 - [x] Optimise Images
 - [x] Implement JS Watch
 - [x] Implement CSS/SCSS Watch
-- [ ] ESLint
-- [ ] Stylelint
+- [x] ESLint
+- [x] Stylelint
 - [x] Hashed filenames
 - [x] Minify HTML
 - [x] LiveReload/BrowserSync/Dev Server (Added `http-server` instead)
