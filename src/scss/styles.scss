@@ -1,6 +1,32 @@
 @charset 'UTF-8';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    overflow-x: hidden;
+    background-repeat: repeat;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 1.6rem;
+    font-size: 16px;
+    font-family: 'Open Sans', serif;
+    line-height: 30px;
+    line-height: 3rem;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #333;
+    position: relative;
+    font-weight: 300;
+    height: 100%;
+}
+
 body {
     background: #efefef;
 }
