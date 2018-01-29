@@ -12,7 +12,9 @@ rimraf "${OUTPUT_DIRECTORY}/**/*.js"
 
 browserify "${SRC_DIRECTORY}/${FILE}" -t [ babelify --presets [ env react ] ] | uglifyjs --compress --mangle -o "${OUTPUT_DIRECTORY}/${FILE}"
 
-sed -i '' "/^  \"\/js\/app\.js/d" public/manifest.json
+if [ -f public/manifest.json ]; then
+    sed -i '' "/^  \"\/js\/app\.js/d" public/manifest.json
+fi
 
 hashmark -s -l 12 -c public "/js/${FILE}" "{dir}/{name}.{hash}{ext}" --asset-map manifest.json
 
