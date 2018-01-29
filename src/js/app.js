@@ -1,21 +1,16 @@
-import 'jquery';
-import 'popper.js';
-import 'bootstrap';
-
 import React from 'react';
-import ReactDOM from 'react-dom';
+import Nav from './nav';
+import Footer from './footer';
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>React boi!!!</h1>
+                <Nav/>
+                <Footer/>
             </div>
         );
     }
 }
 
-ReactDOM.render(
-    React.createElement(App, null),
-    document.getElementById('app')
-);
+export default App;

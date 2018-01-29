@@ -1,7 +1,7 @@
 {
   "name": "kill-gulp",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "src/js/index.js",
   "author": "Amit Dhamu <dev@amitd.co>",
   "license": "MIT",
   "browserslist": [

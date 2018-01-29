@@ -3,7 +3,7 @@
 set -x
 set -e
 
-FILE="app.js"
+FILE="index.js"
 SRC_DIRECTORY="src/js"
 OUTPUT_DIRECTORY="public/js"
 
