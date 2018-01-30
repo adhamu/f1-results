@@ -1,23 +1,25 @@
 #!/usr/bin/env bash
 
+source ./bin/functions.sh
+
 start=`date +%s`
 
-chalk -t "{yellow [`date +%T`] • Starting styles}"
+logline yellow "Starting styles"
 
 FILE="styles"
 SRC_DIRECTORY="src/scss"
 OUTPUT_DIRECTORY="public/css"
 
-chalk -t "{blue [`date +%T`] • Preparing output directory}"
+logline blue "Preparing output directory"
 rimraf "${OUTPUT_DIRECTORY}/**/*.css"
 
-chalk -t "{blue [`date +%T`] • Compiling ${SRC_DIRECTORY}/${FILE}.scss}"
+logline blue "Compiling ${SRC_DIRECTORY}/${FILE}.scss"
 node-sass -q --output-style compressed --omit-source-map-url -o ${OUTPUT_DIRECTORY} "${SRC_DIRECTORY}/${FILE}.scss"
 
-chalk -t "{blue [`date +%T`] • Applying autoprefixer}"
+logline blue "Applying autoprefixer"
 postcss -u autoprefixer -r "${OUTPUT_DIRECTORY}/*" --no-map
 
-chalk -t "{blue [`date +%T`] • Hashing ${FILE}.css and updating manifest}"
+logline blue "Hashing ${FILE}.css and updating manifest"
 if [ -f public/manifest.json ]; then
     sed -i '' "/^  \"\/css\/styles\.css/d" public/manifest.json
 fi
@@ -28,4 +30,4 @@ rimraf "${OUTPUT_DIRECTORY}/${FILE}.css"
 
 end=`date +%s`
 
-chalk -t "{green [`date +%T`] • Finished styles in $((end-start))s}"
+logline green "Finished styles in $((end-start))s"
