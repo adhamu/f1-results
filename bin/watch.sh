@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-set -x
-set -e
-
-concurrently \
+concurrently -p "• {name}" -n "watch:html,watch:styles,watch:scripts,watch:images,http" -c "blue.bold,magenta.bold,green.bold,yellow.bold,cyan.bold" \
     "chokidar 'src/**/*.html' -c 'yarn html'" \
     "chokidar 'src/**/*.{css,scss}' -c 'yarn styles && yarn html'" \
     "chokidar 'src/**/*.{js,jsx}' -c 'yarn scripts && yarn html'" \
