@@ -33,13 +33,13 @@
   },
   "scripts": {
     "start": "yarn build && yarn watch",
-    "build": "yarn styles && yarn scripts && yarn html && yarn images",
+    "build": "yarn styles; yarn scripts; yarn html; yarn images",
     "html": "bin/html.sh",
     "styles": "bin/styles.sh",
     "scripts": "bin/scripts.sh",
     "images": "bin/images.sh",
     "watch": "bin/watch.sh",
-    "lint": "yarn lint:js && yarn lint:css",
+    "lint": "yarn lint:js; yarn lint:css",
     "lint:js": "eslint \".\"",
     "lint:css": "stylelint **/*.{css,scss}"
   },
