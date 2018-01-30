@@ -1,16 +1,22 @@
 #!/usr/bin/env bash
 
-chalk -t '{yellow • Starting HTML}'
+start=`date +%s`
+
+chalk -t "{yellow [`date +%T`] • Starting HTML}"
 
 rimraf public/**/*.html
 
 for i in src/*.html; do
     FILE=$(basename $i)
-    chalk -t "{blue • Minifying ${FILE}}"
+    
+    chalk -t "{blue [`date +%T`] • Minifying ${FILE}}"
     htmlmin -o "public/${FILE}" ${i}
 done
 
-chalk -t "{blue • Rewriting references to hashed filenames}"
+
+chalk -t "{blue [`date +%T`] • Rewriting references to hashed filenames}"
 replaceinfiles -r public/manifest.json -s public/*.html -d 'public/{base}' -S
 
-chalk -t '{green • HTML complete}'
+end=`date +%s`
+
+chalk -t "{green [`date +%T`] • Finished HTML in $((end-start))s}"
